@@ -4,3 +4,7 @@ export # This directive exports env variables to all make commands
 dev:
 	@echo "Starting development server..."
 	@yarn dev
+
+backend:
+	@echo "Starting backend server..."
+	@yarn workspace backend start

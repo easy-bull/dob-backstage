@@ -75,6 +75,13 @@ scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
 
 catalog:
+  providers:
+    github:
+      myGitHubEntityProvider:
+        schedule:
+          # ISO 8601 duration format
+          frequency: PT30M
+          timeout: PT3M
   import:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
